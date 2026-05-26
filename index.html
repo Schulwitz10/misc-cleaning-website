@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Misc Cleaning | Residential & Commercial Cleaning</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#f4f7f9;
+      color:#222;
+    }
+
+    header{
+      background:#0d3b66;
+      color:white;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      font-size:32px;
+      font-weight:700;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      font-weight:500;
+      transition:.3s;
+    }
+
+    nav a:hover{
+      color:#84dcc6;
+    }
+
+    .hero{
+      height:85vh;
+      background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+      url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero-content h1{
+      font-size:60px;
+      margin-bottom:20px;
+    }
+
+    .hero-content p{
+      font-size:22px;
+      max-width:700px;
+      margin:auto;
+      margin-bottom:35px;
+    }
+
+    .btn{
+      background:#84dcc6;
+      color:#0d3b66;
+      padding:15px 35px;
+      text-decoration:none;
+      border-radius:40px;
+      font-weight:700;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      background:white;
+    }
+
+    .services{
+      padding:80px 8%;
+      text-align:center;
+    }
+
+    .services h2{
+      font-size:42px;
+      margin-bottom:50px;
+      color:#0d3b66;
+    }
+
+    .service-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .service-box{
+      background:white;
+      padding:40px 25px;
+      border-radius:20px;
+      box-shadow:0 5px 20px rgba(0,0,0,.1);
+      transition:.3s;
+    }
+
+    .service-box:hover{
+      transform:translateY(-10px);
+    }
+
+    .service-box h3{
+      margin-bottom:15px;
+      color:#0d3b66;
+    }
+
+    .about{
+      background:#0d3b66;
+      color:white;
+      padding:80px 8%;
+      text-align:center;
+    }
+
+    .about h2{
+      font-size:42px;
+      margin-bottom:25px;
+    }
+
+    .about p{
+      max-width:850px;
+      margin:auto;
+      line-height:1.8;
+      font-size:18px;
+    }
+
+    .contact{
+      padding:80px 8%;
+      text-align:center;
+    }
+
+    .contact h2{
+      font-size:42px;
+      color:#0d3b66;
+      margin-bottom:20px;
+    }
+
+    .contact p{
+      font-size:20px;
+      margin-bottom:15px;
+    }
+
+    footer{
+      background:#081f36;
+      color:white;
+      text-align:center;
+      padding:25px;
+    }
+
+    @media(max-width:768px){
+
+      .hero-content h1{
+        font-size:42px;
+      }
+
+      nav{
+        display:none;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">Misc Cleaning</div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+</header>
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <h1>Professional Cleaning You Can Trust</h1>
+
+    <p>
+      Residential and commercial cleaning services dedicated to making your home or business shine.
+    </p>
+
+    <a href="#" class="btn">Get A Free Quote</a>
+
+  </div>
+
+</section>
+
+<section class="services">
+
+  <h2>Our Services</h2>
+
+  <div class="service-grid">
+
+    <div class="service-box">
+      <h3>Residential Cleaning</h3>
+      <p>
+        Reliable home cleaning services to keep your space spotless and stress-free.
+      </p>
+    </div>
+
+    <div class="service-box">
+      <h3>Commercial Cleaning</h3>
+      <p>
+        Professional office and business cleaning tailored to your company’s needs.
+      </p>
+    </div>
+
+    <div class="service-box">
+      <h3>Move In / Move Out</h3>
+      <p>
+        Deep cleaning services for homes, apartments, and rental properties.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="about">
+
+  <h2>About Misc Cleaning</h2>
+
+  <p>
+    At Misc Cleaning, we take pride in delivering dependable, high-quality cleaning services for both residential and commercial clients. We believe a clean environment creates peace of mind, and we work hard to ensure every customer feels valued and satisfied.
+  </p>
+
+</section>
+
+<section class="contact">
+
+  <h2>Contact Us</h2>
+
+  <p>Email: your@email.com</p>
+
+  <p>Phone: (555) 555-5555</p>
+
+  <p>Serving Your Local Area</p>
+
+</section>
+
+<footer>
+
+  © 2026 Misc Cleaning — All Rights Reserved
+
+</footer>
+
+</body>
+</html>
