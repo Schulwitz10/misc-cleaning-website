@@ -22,17 +22,20 @@
       color:#222;
     }
 
-    header{
-      background:#0d3b66;
-      color:white;
-      padding:20px 8%;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-    }
+ header{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  padding:30px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:100;
+}
 
-    .logo img{
-  height:75px;
+  .logo img{
+  height:140px;
   width:auto;
 }
 
@@ -48,7 +51,7 @@
       color:#84dcc6;
     }
 
-    .hero{
+ .hero{
   height:85vh;
   background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
   url('Misc Cleaning Background.png');
@@ -60,6 +63,7 @@
   text-align:center;
   color:white;
   padding:20px;
+  padding-top:120px;
 }
 
     .hero-content h1{
