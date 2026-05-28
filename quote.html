@@ -41,6 +41,20 @@
       color:#84dcc6;
     }
 
+    .home-btn{
+      background:#84dcc6;
+      color:#081f36 !important;
+      padding:12px 22px;
+      border-radius:40px;
+      font-weight:700;
+      transition:.3s;
+    }
+
+    .home-btn:hover{
+      background:white;
+      color:#081f36 !important;
+    }
+
     .quote-section{
       min-height:90vh;
       padding:70px 8%;
@@ -118,7 +132,9 @@
     @media(max-width:768px){
       .quote-box{padding:30px 22px;}
       h1{font-size:34px;}
-      nav{display:none;}
+      nav{display:block;}
+      nav a{margin-left:0;}
+      header{flex-direction:column;gap:18px;}
     }
   </style>
 </head>
@@ -129,10 +145,7 @@
   <div class="logo">Misc Cleaning</div>
 
   <nav>
-    <a href="index.html">Home</a>
-    <a href="index.html#services">Services</a>
-    <a href="quote.html">Free Quote</a>
-    <a href="index.html#contact">Contact</a>
+    <a href="index.html" class="home-btn">← Back To Home</a>
   </nav>
 </header>
 
@@ -163,6 +176,8 @@
       </select>
 
       <input type="text" name="Property Address" placeholder="Property Address">
+
+      <input type="text" name="Estimated Square Footage" placeholder="Estimated Square Footage">
 
       <select name="Preferred Cleaning Frequency">
         <option value="">Preferred Cleaning Frequency</option>
