@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Request a Free Quote | Misc Cleaning</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#f4f7f9;
+      color:#222;
+    }
+
+    header{
+      background:#081f36;
+      color:white;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:700;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      font-weight:500;
+    }
+
+    nav a:hover{
+      color:#84dcc6;
+    }
+
+    .quote-section{
+      min-height:90vh;
+      padding:70px 8%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .quote-box{
+      background:white;
+      max-width:750px;
+      width:100%;
+      padding:45px;
+      border-radius:20px;
+      box-shadow:0 8px 30px rgba(0,0,0,.12);
+    }
+
+    h1{
+      color:#0d3b66;
+      font-size:42px;
+      margin-bottom:10px;
+      text-align:center;
+    }
+
+    .intro{
+      text-align:center;
+      margin-bottom:35px;
+      color:#555;
+      font-size:17px;
+    }
+
+    form{
+      display:grid;
+      gap:18px;
+    }
+
+    input, select, textarea{
+      width:100%;
+      padding:15px;
+      border:1px solid #ccc;
+      border-radius:10px;
+      font-family:'Poppins',sans-serif;
+      font-size:16px;
+    }
+
+    textarea{
+      min-height:140px;
+      resize:vertical;
+    }
+
+    button{
+      background:#0d3b66;
+      color:white;
+      border:none;
+      padding:16px;
+      border-radius:40px;
+      font-size:17px;
+      font-weight:700;
+      cursor:pointer;
+      transition:.3s;
+    }
+
+    button:hover{
+      background:#84dcc6;
+      color:#0d3b66;
+    }
+
+    footer{
+      background:#081f36;
+      color:white;
+      text-align:center;
+      padding:25px;
+    }
+
+    @media(max-width:768px){
+      .quote-box{padding:30px 22px;}
+      h1{font-size:34px;}
+      nav{display:none;}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Misc Cleaning</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#services">Services</a>
+    <a href="quote.html">Free Quote</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="quote-section">
+  <div class="quote-box">
+
+    <h1>Request a Free Quote</h1>
+
+    <p class="intro">
+      Tell us a little about your cleaning needs and we’ll get back with you as soon as possible.
+    </p>
+
+    <form action="https://formspree.io/f/xkoeyjzq" method="POST">
+
+      <input type="text" name="Name" placeholder="Your Name" required>
+
+      <input type="email" name="Email" placeholder="Your Email" required>
+
+      <input type="tel" name="Phone" placeholder="Phone Number">
+
+      <select name="Service Type" required>
+        <option value="">Select Service Type</option>
+        <option>Residential Cleaning</option>
+        <option>Commercial Cleaning</option>
+        <option>Move In / Move Out Cleaning</option>
+        <option>Deep Cleaning</option>
+        <option>Recurring Cleaning</option>
+      </select>
+
+      <input type="text" name="Property Address" placeholder="Property Address">
+
+      <select name="Preferred Cleaning Frequency">
+        <option value="">Preferred Cleaning Frequency</option>
+        <option>One-Time Cleaning</option>
+        <option>Weekly</option>
+        <option>Bi-Weekly</option>
+        <option>Monthly</option>
+      </select>
+
+      <textarea name="Message" placeholder="Tell us what you need cleaned..." required></textarea>
+
+      <button type="submit">Submit Quote Request</button>
+
+    </form>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Misc Cleaning — All Rights Reserved
+</footer>
+
+</body>
+</html>
